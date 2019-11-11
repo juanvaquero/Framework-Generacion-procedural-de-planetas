@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Referencia: https://lindenreid.wordpress.com/2017/11/07/procedural-sphere-ellipsoid-tutorial/
 /// </summary>
-public class GenerateUVSphere : MonoBehaviour {
+public class UVSphere : MonoBehaviour {
 
 
     private const float PI = Mathf.PI;
@@ -27,7 +27,7 @@ public class GenerateUVSphere : MonoBehaviour {
     private List<int> triangulos;
 
     private Mesh malla;
-    private bool inicialize = false;
+    private bool inicializado = false;
 
     // Use this for initialization
     void Initialize () {
@@ -36,14 +36,14 @@ public class GenerateUVSphere : MonoBehaviour {
         triangulos = new List<int>();
         GetComponent<MeshFilter>().mesh = malla;
         mostrarVertices = false;
-        inicialize = true;
+        inicializado = true;
     }
 
 
 
     public void OnValidate()
     {
-        if (!inicialize)
+        if (!inicializado)
         { 
             Initialize();
         }

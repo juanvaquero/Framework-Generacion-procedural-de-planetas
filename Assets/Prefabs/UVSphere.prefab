@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4421379486197036}
-  - component: {fileID: 114053561146676472}
-  - component: {fileID: 33657135024932032}
-  - component: {fileID: 23176796409384232}
+  - component: {fileID: 114106907764051812}
+  - component: {fileID: 33891052601549258}
+  - component: {fileID: 23560305951705228}
   m_Layer: 0
-  m_Name: GeneradorUVEsfera
+  m_Name: UVSphere
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -36,13 +36,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072830092865472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -16.73, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23176796409384232
+--- !u!23 &23560305951705228
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,14 +77,14 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33657135024932032
+--- !u!33 &33891052601549258
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072830092865472}
   m_Mesh: {fileID: 0}
---- !u!114 &114053561146676472
+--- !u!114 &114106907764051812
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,11 +92,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1072830092865472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ec2ce221782514a8cf775e1de87d4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 461762f33bb27c649b9c3d6e727713a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ancho: 1
   largo: 1
   alto: 1
   mostrarVertices: 0
-  resolucion: 8
+  resolucion: 16

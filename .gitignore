@@ -1,0 +1,6 @@
+ #Ignore all .meta file
+ *.meta
+/Temp
+/Library
+
+

@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
    
 [RequireComponent(typeof(MeshFilter))]
-public class GenerateQuad : MonoBehaviour {
+public class GeneratePlane : MonoBehaviour {
 
     Mesh malla;
 
