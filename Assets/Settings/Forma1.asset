@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1662186ce683daf4699f56f35446332d, type: 3}
   m_Name: Forma1
   m_EditorClassIdentifier: 
-  radioPlaneta: 2
+  planetRadius: 1.5
