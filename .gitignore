@@ -4,3 +4,7 @@
 /Library
 
 
+*.json
+.vscode/settings.json
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj

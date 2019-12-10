@@ -53,7 +53,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Default Dark+",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false
 }

@@ -53,7 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\PlanetEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\ConditionalHideSettings.cs" />
+     <Compile Include="Assets\Scripts\Editor\ConditionalHideSettingsDrawer.cs" />
+     <Compile Include="Assets\Scripts\Editor\PlanetEditor.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/juan_/Documents/TFG- Generacion procedural de planetas/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

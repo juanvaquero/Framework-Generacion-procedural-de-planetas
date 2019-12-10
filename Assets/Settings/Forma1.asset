@@ -11,4 +11,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1662186ce683daf4699f56f35446332d, type: 3}
   m_Name: Forma1
   m_EditorClassIdentifier: 
-  planetRadius: 1.5
+  planetRadius: 1
+  noiseLayers:
+  - Name: 'Layer 1: Perlin'
+    enabled: 1
+    useFirstLayerAsMask: 0
+    filterSettings:
+      filterType: 0
+      perlinNoiseSettings:
+        numberOctaves: 6
+        frecuency: 2.07
+        lucanarity: 2.3
+        persistence: 0.4
+        seed: 264
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0.509
+        inferiorBound: 0
+        superiorBound: 1
+      ridgedMultiNoiseSettings:
+        numberOctaves: 0
+        frecuency: 0
+        lucanarity: 0
+        seed: 0
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0
+        inferiorBound: 0
+        superiorBound: 0
+  - Name: 'Layer 2: Perlin'
+    enabled: 1
+    useFirstLayerAsMask: 0
+    filterSettings:
+      filterType: 0
+      perlinNoiseSettings:
+        numberOctaves: 6
+        frecuency: 2.07
+        lucanarity: 2.3
+        persistence: 0.4
+        seed: 509
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0.374
+        inferiorBound: 0
+        superiorBound: 1
+      ridgedMultiNoiseSettings:
+        numberOctaves: 0
+        frecuency: 0
+        lucanarity: 0
+        seed: 0
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0
+        inferiorBound: 0
+        superiorBound: 0
+  - Name: 'Layer 3: Perlin'
+    enabled: 1
+    useFirstLayerAsMask: 1
+    filterSettings:
+      filterType: 0
+      perlinNoiseSettings:
+        numberOctaves: 6
+        frecuency: 2.07
+        lucanarity: 2.3
+        persistence: 0.4
+        seed: 353
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0.316
+        inferiorBound: 0
+        superiorBound: 1
+      ridgedMultiNoiseSettings:
+        numberOctaves: 0
+        frecuency: 0
+        lucanarity: 0
+        seed: 0
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0
+        inferiorBound: 0
+        superiorBound: 0
