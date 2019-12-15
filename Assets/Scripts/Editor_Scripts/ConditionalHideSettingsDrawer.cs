@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 //Original version of the ConditionalHideSettings created by Brecht Lecluyse (www.brechtos.com)
 
-
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(ConditionalHideSettings))]
 public class ConditionalHideSettingsDrawer : PropertyDrawer
 {
@@ -81,4 +81,6 @@ public class ConditionalHideSettingsDrawer : PropertyDrawer
                 return true;
         }
     }
+
 }
+#endif
