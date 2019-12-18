@@ -36,7 +36,6 @@ public class ShapeGenerator  {
 
 	public Vector3 CalculatePointOnQuadSphere(Vector3 pointOnUnitSphere)
 	{
-	
 		// Valor de elevacion de ese punto.	
 		float elevation = (float)(finalFilter.GetValue(pointOnUnitSphere) + 1f) * 0.5f;
 

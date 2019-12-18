@@ -33,9 +33,9 @@ public class Planet : MonoBehaviour {
         GeneratePlanet();
     }
     //Para que se actualizase al salir del playMode.
-    private void OnValidate() {
-        GeneratePlanet();
-    }
+        private void OnValidate() {
+            GeneratePlanet();
+        }
 
     void Initialize()
     {   
@@ -54,7 +54,7 @@ public class Planet : MonoBehaviour {
         {
             if(meshFilters[i] == null)
             {
-            GameObject cara = new GameObject("cara"+(i+1));
+            GameObject cara = new GameObject("cara"+(i+1)+": "+direcciones[i]);
             cara.transform.parent = transform;
             cara.AddComponent<MeshRenderer>(); 
             meshFilters[i] = cara.AddComponent<MeshFilter>();
@@ -63,13 +63,14 @@ public class Planet : MonoBehaviour {
             // Asignamos el material a cada cara del planeta.
             meshFilters[i].GetComponent<MeshRenderer>().sharedMaterial = colorSettings.material;
             //Creamos la cara del planeta.
-            SphereFaces[i] = new QuadFace(shapeGenerator,meshFilters[i].sharedMesh, resolution, direcciones[i]);
+            SphereFaces[i] = new QuadFace(shapeGenerator,colorGenerator,meshFilters[i].sharedMesh, resolution, direcciones[i]);
             //Indicamos si esa cara del planeta se va a activar o no.
             bool renderFace = faceRenderMask == FaceRenderMask.All || (int)faceRenderMask - 1 == i;
             meshFilters[i].gameObject.SetActive(renderFace);
 
         }
     }
+    
 
     private void GenerateMesh()
     {
@@ -85,6 +86,13 @@ public class Planet : MonoBehaviour {
     private void GenerateColors()
     {
         colorGenerator.UpdateColors();
+
+        for (int i = 0; i < SphereFaces.Length; i++)
+        {
+            //Generamos solo la malla de los terrenos que estan activos.
+            if (meshFilters[i].gameObject.activeSelf)
+                SphereFaces[i].UpdateUvs();
+        }
     }
 
     public void GeneratePlanet()

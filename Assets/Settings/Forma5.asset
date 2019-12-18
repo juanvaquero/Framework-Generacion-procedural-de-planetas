@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1662186ce683daf4699f56f35446332d, type: 3}
+  m_Name: Forma5
+  m_EditorClassIdentifier: 
+  planetRadius: 1
+  noiseLayers:
+  - Name: 'Layer 1: Perlin'
+    enabled: 1
+    useFirstLayerAsMask: 0
+    filterSettings:
+      filterType: 0
+      perlinNoiseSettings:
+        numberOctaves: 7
+        frecuency: 1.67
+        lucanarity: 2.345
+        persistence: 0.5
+        seed: 402
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0.471
+        inferiorBound: -1
+        superiorBound: 1
+      ridgedMultiNoiseSettings:
+        numberOctaves: 0
+        frecuency: 0
+        lucanarity: 0
+        seed: 0
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0
+        inferiorBound: 0
+        superiorBound: 0
+  - Name: 'Layer 2: Perlin'
+    enabled: 1
+    useFirstLayerAsMask: 1
+    filterSettings:
+      filterType: 0
+      perlinNoiseSettings:
+        numberOctaves: 7
+        frecuency: 2.47
+        lucanarity: 2.388
+        persistence: 0.5
+        seed: 336
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 10.36, z: 0}
+        strength: 0.386
+        inferiorBound: 0
+        superiorBound: -0
+      ridgedMultiNoiseSettings:
+        numberOctaves: 6
+        frecuency: 1.74
+        lucanarity: 1.721
+        seed: 531
+        noiseQuality: 0
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 1
+        inferiorBound: -1
+        superiorBound: 1

@@ -26,8 +26,8 @@ MonoBehaviour:
         seed: 402
         noiseQuality: 0
         offsetCenter: {x: 0, y: 0, z: 0}
-        strength: 0.39
-        inferiorBound: -1
+        strength: 0.471
+        inferiorBound: 0
         superiorBound: 1
       ridgedMultiNoiseSettings:
         numberOctaves: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
         superiorBound: 0
   - Name: 'Layer 2: Perlin'
     enabled: 1
-    useFirstLayerAsMask: 1
+    useFirstLayerAsMask: 0
     filterSettings:
       filterType: 0
       perlinNoiseSettings:
@@ -51,10 +51,10 @@ MonoBehaviour:
         persistence: 0.5
         seed: 336
         noiseQuality: 0
-        offsetCenter: {x: 0, y: 8.47, z: 0}
-        strength: 0.386
-        inferiorBound: 0
-        superiorBound: 0
+        offsetCenter: {x: 0, y: 10.36, z: 0}
+        strength: 0.2
+        inferiorBound: 0.2
+        superiorBound: 0.5
       ridgedMultiNoiseSettings:
         numberOctaves: 6
         frecuency: 1.74

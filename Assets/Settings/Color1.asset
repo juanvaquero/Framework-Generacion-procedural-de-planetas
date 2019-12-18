@@ -11,33 +11,128 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d957ff3beb38b740a57c2920bb3237d, type: 3}
   m_Name: Color1
   m_EditorClassIdentifier: 
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.088510156, g: 0.16857414, b: 0.4811321, a: 1}
-    key1: {r: 0.16015486, g: 0.55228275, b: 0.5754717, a: 1}
-    key2: {r: 0.990566, g: 0.7041145, b: 0.378471, a: 1}
-    key3: {r: 0.8113208, g: 0.4812793, b: 0.10332859, a: 1}
-    key4: {r: 0.2021627, g: 0.7264151, b: 0.32844248, a: 1}
-    key5: {r: 0, g: 0.38679248, b: 0.09052593, a: 0}
-    key6: {r: 0.4433962, g: 0.21503745, b: 0.02300641, a: 0}
-    key7: {r: 1, g: 1, b: 1, a: 0}
-    ctime0: 0
-    ctime1: 4406
-    ctime2: 7710
-    ctime3: 12336
-    ctime4: 19468
-    ctime5: 27178
-    ctime6: 38550
-    ctime7: 56090
-    atime0: 0
-    atime1: 32768
-    atime2: 65535
-    atime3: 43874
-    atime4: 65535
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 8
-    m_NumAlphaKeys: 3
   material: {fileID: 2100000, guid: 3896b5f9524e182498007cf968666efd, type: 2}
+  biomeColorSettings:
+    biomes:
+    - gradient:
+        serializedVersion: 2
+        key0: {r: 0.088510156, g: 0.16857414, b: 0.4811321, a: 1}
+        key1: {r: 0.990566, g: 0.7041145, b: 0.378471, a: 1}
+        key2: {r: 0.8113208, g: 0.4812793, b: 0.10332859, a: 1}
+        key3: {r: 0.2021627, g: 0.7264151, b: 0.32844248, a: 0}
+        key4: {r: 0, g: 0.38679248, b: 0.09052593, a: 0}
+        key5: {r: 0.491369, g: 0.2826921, b: 0.10721191, a: 0}
+        key6: {r: 0.4433962, g: 0.21503745, b: 0.02300641, a: 0}
+        key7: {r: 1, g: 1, b: 1, a: 0}
+        ctime0: 0
+        ctime1: 7710
+        ctime2: 12336
+        ctime3: 19468
+        ctime4: 27178
+        ctime5: 35852
+        ctime6: 44333
+        ctime7: 56090
+        atime0: 0
+        atime1: 32768
+        atime2: 65535
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 8
+        m_NumAlphaKeys: 3
+      tint: {r: 0.8301887, g: 0.090067655, b: 0.090067655, a: 0}
+      startLatitude: 0
+      strengthTint: 0
+    - gradient:
+        serializedVersion: 2
+        key0: {r: 0.088510156, g: 0.16857414, b: 0.4811321, a: 1}
+        key1: {r: 0.16015486, g: 0.55228275, b: 0.5754717, a: 1}
+        key2: {r: 0.990566, g: 0.7041145, b: 0.378471, a: 1}
+        key3: {r: 0.8113208, g: 0.4812793, b: 0.10332859, a: 0}
+        key4: {r: 0.2021627, g: 0.7264151, b: 0.32844248, a: 0}
+        key5: {r: 0, g: 0.38679248, b: 0.09052593, a: 0}
+        key6: {r: 0.4433962, g: 0.21503745, b: 0.02300641, a: 0}
+        key7: {r: 1, g: 1, b: 1, a: 0}
+        ctime0: 0
+        ctime1: 4406
+        ctime2: 7710
+        ctime3: 12336
+        ctime4: 19468
+        ctime5: 27178
+        ctime6: 38550
+        ctime7: 56090
+        atime0: 0
+        atime1: 32768
+        atime2: 65535
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 8
+        m_NumAlphaKeys: 3
+      tint: {r: 0.08223567, g: 0.47523278, b: 0.8301887, a: 0}
+      startLatitude: 0.348
+      strengthTint: 0
+    - gradient:
+        serializedVersion: 2
+        key0: {r: 0.088510156, g: 0.16857414, b: 0.4811321, a: 1}
+        key1: {r: 0.5439658, g: 0.6037736, b: 0.57039255, a: 1}
+        key2: {r: 0.990566, g: 0.7041145, b: 0.378471, a: 1}
+        key3: {r: 0.8113208, g: 0.4812793, b: 0.10332859, a: 0}
+        key4: {r: 0.4433962, g: 0.21503745, b: 0.02300641, a: 0}
+        key5: {r: 0.6792453, g: 0.60918474, b: 0.54788184, a: 0}
+        key6: {r: 1, g: 1, b: 1, a: 0}
+        key7: {r: 1, g: 1, b: 1, a: 0}
+        ctime0: 0
+        ctime1: 2937
+        ctime2: 7710
+        ctime3: 12336
+        ctime4: 18357
+        ctime5: 27169
+        ctime6: 32676
+        ctime7: 41487
+        atime0: 0
+        atime1: 32768
+        atime2: 65535
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 7
+        m_NumAlphaKeys: 3
+      tint: {r: 1, g: 1, b: 1, a: 0}
+      startLatitude: 0.668
+      strengthTint: 0.1
+    biomeFilterSettings:
+      filterType: 0
+      perlinNoiseSettings:
+        numberOctaves: 6
+        frecuency: 2
+        lucanarity: 3.221
+        persistence: 0.563
+        seed: 337
+        noiseQuality: 1
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0.392
+        inferiorBound: 0
+        superiorBound: 1
+      ridgedMultiNoiseSettings:
+        numberOctaves: 4
+        frecuency: 1
+        lucanarity: 1.5
+        seed: 0
+        noiseQuality: 1
+        offsetCenter: {x: 0, y: 0, z: 0}
+        strength: 0.5
+        inferiorBound: 0
+        superiorBound: 1
+    filterOffest: 0.68
+    filterStrength: 0.1
+    blendStrength: 0.108
