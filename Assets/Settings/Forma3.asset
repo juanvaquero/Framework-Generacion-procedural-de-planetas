@@ -26,7 +26,7 @@ MonoBehaviour:
         seed: 264
         noiseQuality: 0
         offsetCenter: {x: 0, y: 0, z: 0}
-        strength: 0.6
+        strength: 0.511
         inferiorBound: 0
         superiorBound: 1
       ridgedMultiNoiseSettings:
@@ -52,7 +52,7 @@ MonoBehaviour:
         seed: 509
         noiseQuality: 0
         offsetCenter: {x: 0.4, y: 0, z: 0}
-        strength: 0.547
+        strength: 0.349
         inferiorBound: 0
         superiorBound: 1
       ridgedMultiNoiseSettings:

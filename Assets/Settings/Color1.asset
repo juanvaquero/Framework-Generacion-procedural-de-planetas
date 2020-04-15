@@ -30,8 +30,8 @@ MonoBehaviour:
         ctime3: 19468
         ctime4: 27178
         ctime5: 35852
-        ctime6: 44333
-        ctime7: 56090
+        ctime6: 51584
+        ctime7: 62414
         atime0: 0
         atime1: 32768
         atime2: 65535
@@ -76,7 +76,7 @@ MonoBehaviour:
         m_NumColorKeys: 8
         m_NumAlphaKeys: 3
       tint: {r: 0.08223567, g: 0.47523278, b: 0.8301887, a: 0}
-      startLatitude: 0.348
+      startLatitude: 0.333
       strengthTint: 0
     - gradient:
         serializedVersion: 2
@@ -108,8 +108,8 @@ MonoBehaviour:
         m_NumColorKeys: 7
         m_NumAlphaKeys: 3
       tint: {r: 1, g: 1, b: 1, a: 0}
-      startLatitude: 0.668
-      strengthTint: 0.1
+      startLatitude: 0.479
+      strengthTint: 0
     biomeFilterSettings:
       filterType: 0
       perlinNoiseSettings:
@@ -133,6 +133,35 @@ MonoBehaviour:
         strength: 0.5
         inferiorBound: 0
         superiorBound: 1
-    filterOffest: 0.68
-    filterStrength: 0.1
-    blendStrength: 0.108
+    filterOffest: 2.08
+    filterStrength: 0.18
+    blendStrength: 0.542
+  oceanColor:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 1, g: 1, b: 1, a: 0}
+    key2: {r: 0.46387714, g: 0.6226415, b: 0.16740832, a: 1}
+    key3: {r: 0.8396226, g: 0.28552344, b: 0.22574759, a: 0}
+    key4: {r: 0.7254902, g: 0.20392157, b: 0.33874688, a: 0}
+    key5: {r: 0.25698647, g: 0.50198007, b: 0.5188679, a: 0}
+    key6: {r: 0.26330546, g: 0.37255797, b: 0.5754717, a: 0}
+    key7: {r: 0.7264151, g: 0.38719293, b: 0.6519078, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 8628
+    ctime3: 12336
+    ctime4: 20009
+    ctime5: 30656
+    ctime6: 43690
+    ctime7: 60211
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2

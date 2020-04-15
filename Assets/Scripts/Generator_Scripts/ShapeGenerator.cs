@@ -81,8 +81,8 @@ public class ShapeGenerator  {
 		// terrace.Add(0.3);
 		// terrace.Add(0.2);
 		// terrace.Add(0.1);
+		// combinedModules = terrace;
 
-		// return terrace;
 		return combinedModules;
 	}
 

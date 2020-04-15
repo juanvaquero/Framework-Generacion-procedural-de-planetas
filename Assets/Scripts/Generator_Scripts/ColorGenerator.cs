@@ -6,7 +6,7 @@ public class ColorGenerator
     private ColorSettings colorSettings;
     //Textura en la que almacenar el gradiente del planeta.
     private Texture2D texture;
-    private const int resolutionTexture = 50;
+    private const int textureResolution = 50;
     NoiseFilter biomeNoiseFilter;
 
     public void UpdateSettings(ColorSettings settings)
@@ -16,7 +16,9 @@ public class ColorGenerator
         //Creamos la textura para almacenar nuestro gradiente de colores.(50 x numero de biomas)
         if (texture == null || texture.height != numbiomes)
         {
-            texture = new Texture2D(resolutionTexture, numbiomes,TextureFormat.RGBA32, false);
+            // Doblamos el ancho de la textura de nuestro planeta, para guardar en este espacio los colores del oceano del planeta.
+            texture = new Texture2D(textureResolution*2, numbiomes,TextureFormat.RGBA32, false);
+            // texture = new Texture2D(textureResolution*2, numbiomes,TextureFormat.RGBA32, false);
         }
 
         biomeNoiseFilter = NoiseFilterFactory.CreateNoiseFilter(colorSettings.biomeColorSettings.biomeFilterSettings);
@@ -59,10 +61,23 @@ public class ColorGenerator
         int colorIndex = 0;
         foreach (var biome in colorSettings.biomeColorSettings.biomes)
         {
-            for (int i = 0; i < resolutionTexture; i++)
+            // for (int i = 0; i < textureResolution*2; i++)
+            for (int i = 0; i < textureResolution*2; i++)
             {
-                //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
-                Color colorGradient = biome.gradient.Evaluate(i / (resolutionTexture - 1f));
+                // Color colorGradient;
+
+                // if(i < textureResolution){
+                //     //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
+                //     colorGradient = colorSettings.oceanColor.Evaluate(i / (textureResolution - 1f));
+                // }else
+                // {
+                //     //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
+                //     // Restamos textureResolution para poder empezar en 0.
+                //     colorGradient = biome.gradient.Evaluate((i - textureResolution)/ (textureResolution - 1f));
+                // }
+                
+                Color colorGradient = biome.gradient.Evaluate(i / (textureResolution - 1f));
+
                 Color tintColor = biome.tint;
                 colors[colorIndex] = colorGradient * (1 - biome.strengthTint) + tintColor * biome.strengthTint;
                 colorIndex++;
