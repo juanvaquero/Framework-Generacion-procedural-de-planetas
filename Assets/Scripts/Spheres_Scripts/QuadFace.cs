@@ -38,7 +38,20 @@ public class QuadFace {
         Vector3[] vertices = new Vector3[resolution * resolution];
         List<int> triangulos = new List<int>();
         //Guardamos los uvs de la malla para no perderlos cuando la volvamos a generar.
-        Vector2[] uvs = mesh.uv;
+        // Vector2[] uvs = mesh.uv;
+        Vector2[] uvs;
+        //Comprobamos que no se ha cambiado la resolucion del planeta,
+        //si esta ha cambiado reajustamos el tamaño de nuestra uvs.
+        if( mesh.uv.Length == vertices.Length)
+        {
+            uvs = mesh.uv;
+        }
+        else
+        {
+            uvs = new Vector2[vertices.Length];
+        }
+
+        
 
         for (int y = 0; y < resolution; y++)
         {
@@ -50,8 +63,13 @@ public class QuadFace {
                 Vector3 puntoActualCubo = localUp + (porcentaje.x -0.5f) * 2 * ejeA
                     + (porcentaje.y -0.5f) * 2 * ejeB;
                 Vector3 puntoActualEsfera = puntoActualCubo.normalized;
-
-                vertices[i] = shapeGenerator.CalculatePointOnQuadSphere(puntoActualEsfera);  
+                //Revisar
+                // vertices[i] = shapeGenerator.CalculatePointOnQuadSphere(puntoActualEsfera);  
+                float unScaledElevation = shapeGenerator.CalculateUnscaledElevation(puntoActualEsfera);
+                vertices[i] = puntoActualEsfera * shapeGenerator.GetScaledElevation(unScaledElevation);
+                //Nos guardamos el valor de la elevacion del planeta sin escalarla en la Y , 
+                //para asi poder pintar la profundidad de nuestro planeta.
+                uvs[i].y = unScaledElevation;
 
                 //TODO mirar luego si cambiarlo a menor que resolution.
                 if ( x != (resolution-1) && y != (resolution-1))
@@ -77,8 +95,9 @@ public class QuadFace {
 
     public void UpdateUvs()
     {
-        Vector2[] uvs = new Vector2[resolution*resolution];
-        
+        // Vector2[] uvs = new Vector2[resolution*resolution];
+        Vector2[] uvs = mesh.uv;
+
         for (int y = 0; y < resolution; y++)
         {
             for (int x = 0; x < resolution; x++)
@@ -90,7 +109,10 @@ public class QuadFace {
                     + (porcentaje.y -0.5f) * 2 * ejeB;
                 Vector3 puntoActualEsfera = puntoActualCubo.normalized;
 
-                uvs[i] = new Vector2(colorGenerator.BiomePercentFromPoint(puntoActualEsfera),0);
+                // uvs[i] = new Vector2(colorGenerator.BiomePercentFromPoint(puntoActualEsfera),0);
+                //En la X almaceamos el porcentaje de bioma del punto actual.
+                uvs[i].x = colorGenerator.BiomePercentFromPoint(puntoActualEsfera);
+               
             }
         }
         mesh.uv = uvs;

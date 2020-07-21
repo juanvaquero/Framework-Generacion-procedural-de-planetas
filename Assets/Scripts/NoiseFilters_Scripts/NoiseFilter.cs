@@ -19,10 +19,12 @@ public abstract class NoiseFilter  {
 		return new LibNoise.Operator.Multiply(moduleFilter,strengthFilter);
 	}
 
-	protected ModuleBase AplicateClamp(ModuleBase filter)
-	{
-		return new LibNoise.Operator.Clamp(inferiorBound,superiorBound,filter);
-	}
+	public abstract ModuleBase AplicateClamp(ModuleBase filter);
+
+    // public abstract ModuleBase AplicateClamp(ModuleBase filter)
+    // {
+    //     return new LibNoise.Operator.Clamp(inferiorBound, superiorBound, filter);
+    // }
 
 	protected ModuleBase AplicateMininumValue(ModuleBase filter)
 	{	ModuleBase minimunFilter = new LibNoise.Generator.Const(inferiorBound);

@@ -4,56 +4,57 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1662186ce683daf4699f56f35446332d, type: 3}
   m_Name: Forma2
   m_EditorClassIdentifier: 
-  planetRadius: 1
+  planetRadius: 3
   noiseLayers:
-  - Name: 'Layer 1: Perlin'
+  - Name: 'Layer 1: RidgidMulti'
     enabled: 1
     useFirstLayerAsMask: 0
     filterSettings:
-      filterType: 0
+      filterType: 1
       perlinNoiseSettings:
         numberOctaves: 4
-        frecuency: 2.16
-        lucanarity: 2.263
-        persistence: 0.49
+        frecuency: 2.95
+        lucanarity: 2.204
+        persistence: 0.542
         seed: 334
         noiseQuality: 0
         offsetCenter: {x: 0, y: 0.13, z: 2}
-        strength: 0.671
+        strength: 0.624
         inferiorBound: 0
         superiorBound: 1
       ridgedMultiNoiseSettings:
-        numberOctaves: 5
+        numberOctaves: 6
         frecuency: 1.33
-        lucanarity: 2.716
+        lucanarity: 3.134
         seed: 58
         noiseQuality: 0
         offsetCenter: {x: 0, y: 0, z: 0}
-        strength: 0.797
+        strength: 0.077
         inferiorBound: 0
         superiorBound: 1
   - Name: 'Layer 2: Perlin'
-    enabled: 1
-    useFirstLayerAsMask: 0
+    enabled: 0
+    useFirstLayerAsMask: 1
     filterSettings:
       filterType: 0
       perlinNoiseSettings:
         numberOctaves: 7
-        frecuency: 6.81
+        frecuency: 3
         lucanarity: 2.388
         persistence: 0.342
-        seed: 336
+        seed: 387
         noiseQuality: 0
-        offsetCenter: {x: 0, y: 10.36, z: 0}
-        strength: 0.41
-        inferiorBound: 0.2
+        offsetCenter: {x: 0, y: -0.89, z: 0}
+        strength: 0.424
+        inferiorBound: 0
         superiorBound: 1
       ridgedMultiNoiseSettings:
         numberOctaves: 2

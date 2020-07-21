@@ -14,21 +14,28 @@ public class RidgedMultiNoiseFilter : NoiseFilter  {
 											  settings.seed,
 											  settings.noiseQuality);
 		
-		
 		strength = settings.strength;
 		offsetCenter = settings.offsetCenter;
         inferiorBound = settings.inferiorBound;
-        superiorBound = settings.superiorBound;
+		superiorBound = settings.superiorBound;
 	}
 
 
 	public override ModuleBase AplicateSettings()
 	{
 	    ModuleBase filterModificated = AplicateStrength();
-		filterModificated = AplicateClamp(filterModificated);
-		filterModificated = AplicateTranslation(filterModificated);// Aplicamos un offset del punto de generacion del filtro.
+        // filterModificated = AplicateClamp(filterModificated);
 
+        // filterModificated = AplicateMininumValue(filterModificated);
+		filterModificated = AplicateTranslation(filterModificated);// Aplicamos un offset del punto de generacion del filtro.
 
 		return filterModificated;
 	}
+
+	public override ModuleBase AplicateClamp(ModuleBase filter)
+    {
+        return new LibNoise.Operator.Clamp(inferiorBound, superiorBound, filter);
+    }
+
 }
+	

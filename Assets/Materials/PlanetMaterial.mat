@@ -68,6 +68,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_6E13AF1E: 0.65
+    - Vector1_BF3D3DF9: 0.33
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -94,4 +96,4 @@ Material:
     - _Color: {r: 0, g: 0.7254902, b: 0.009690664, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _elevationMinMax: {r: 2.6, g: 3.036471, b: 0, a: 0}
+    - _elevationMinMax: {r: -0.22895636, g: 0.18556572, b: 0, a: 0}

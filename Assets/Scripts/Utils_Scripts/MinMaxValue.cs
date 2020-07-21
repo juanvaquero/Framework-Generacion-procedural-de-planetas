@@ -11,7 +11,7 @@ public class MinMaxValue  {
 		max = float.MinValue;
 	}
 
-	public void AddValue(float value)
+	public void  AddValue(float value)
 	{
 		if(value > max)
 			max = value;

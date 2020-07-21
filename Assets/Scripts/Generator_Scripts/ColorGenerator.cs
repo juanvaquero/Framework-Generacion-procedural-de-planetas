@@ -1,9 +1,10 @@
+
 using UnityEngine;
 
 public class ColorGenerator
 {
 
-    private ColorSettings colorSettings;
+    private ColorSettings colorSettings;       
     //Textura en la que almacenar el gradiente del planeta.
     private Texture2D texture;
     private const int textureResolution = 50;
@@ -64,19 +65,17 @@ public class ColorGenerator
             // for (int i = 0; i < textureResolution*2; i++)
             for (int i = 0; i < textureResolution*2; i++)
             {
-                // Color colorGradient;
+                Color colorGradient;
 
-                // if(i < textureResolution){
-                //     //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
-                //     colorGradient = colorSettings.oceanColor.Evaluate(i / (textureResolution - 1f));
-                // }else
-                // {
-                //     //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
-                //     // Restamos textureResolution para poder empezar en 0.
-                //     colorGradient = biome.gradient.Evaluate((i - textureResolution)/ (textureResolution - 1f));
-                // }
-                
-                Color colorGradient = biome.gradient.Evaluate(i / (textureResolution - 1f));
+                if(i < textureResolution){
+                    //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
+                    colorGradient = colorSettings.oceanColor.Evaluate(i / (textureResolution - 1f));
+                }else
+                {
+                    //De esta manera conseguimos el color correspondiente para cada 50º trozo del gradiente.
+                    // Restamos textureResolution para poder empezar en 0.
+                    colorGradient = biome.gradient.Evaluate((i - textureResolution)/ (textureResolution - 1f));
+                }
 
                 Color tintColor = biome.tint;
                 colors[colorIndex] = colorGradient * (1 - biome.strengthTint) + tintColor * biome.strengthTint;
