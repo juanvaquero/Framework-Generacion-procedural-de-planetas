@@ -10,7 +10,7 @@
 
 • Desarrollo de la herramienta usando Unity Editor.
 
-En la carpeta Documentación, están subidos el pdf del TFG y su correspondiente presentación.
+• [Presentación](https://docs.google.com/presentation/d/1VibQ1MMF5ryMOypSxF-BGybq9f34Gv9rT7cgJWPFwoQ/edit?usp=share_link) | [Documentación](https://drive.google.com/file/d/1wJq9hOXxna1sLaZ2MgpsoLzJhm_uSKI8/view?usp=share_link)
 
 ![image](https://user-images.githubusercontent.com/14598192/235074885-eff906df-602e-49d1-a33b-6a9f3a40b3c8.png)
 
